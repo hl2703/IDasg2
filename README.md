@@ -2,13 +2,13 @@
 A Simple Budget Tracker
 Overall description of app:
 An app designed to track your income and expenses in a simple way. You can track, view, sort, delete, update and compare your income/expenses over a period of time.
+This app will make use of the local storage api to store and retrieve record details , the ip api to display location and currency of record and the chart.js api to display the details over a period of time in the form of a chart.
 Platforms to run application: An internet browser( chrome, firefox, etc)
 
 Features
 1.	Create record
 To get started, enter a new record by clicking the “create new record” button. 
-You will see the page below.
- 
+
 Fill in the following input fields:
 •	 Record Title (required so that user can identify each record)
 -	At least 3 characters required, cannot be left blank
@@ -41,9 +41,9 @@ Click the “back” button to go back to the home page.
 2.	View records:
 To view the records created, click the “view records” button.
 The records will be displayed in a table.
-3. Update records
-4. delete records
-5. summary of records
+1. Update records
+2. delete records
+3. summary of records
 
 
 credits:
