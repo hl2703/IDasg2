@@ -1,5 +1,15 @@
 # IDasg2
-A Simple Budget Tracker
+Build a front-end website that allows budget tracking
+External user’s goal:
+Be able to track spending information and retrieve information
+Site owner's goal:
+Get users to store their daily expenses and track their spending
+                                                
+Potential features to include:
+•	track, view, sort, delete, update and compare your income/expenses over a period of time.
+•	Use localstorage to store spending information
+•	Using charts to display information and provide comparison
+
 Overall description of app:
 An app designed to track your income and expenses in a simple way. You can track, view, sort, delete, update and compare your income/expenses over a period of time.
 This app will make use of the local storage api to store and retrieve record details , the ip api to display location and currency of record and the chart.js api to display the details over a period of time in the form of a chart.
