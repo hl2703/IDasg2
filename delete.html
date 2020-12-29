@@ -14,7 +14,42 @@
 </head>
 
 <body>
-    
+    <h1 class="heading">Delete Record </h1>
+<br>
+<form id="deleteform">
+
+        <p><label class="inputname" >
+            Select record:</label>
+            <select id="selectid" name="selectrecord"><option value=""> --- </option></select>
+        </p>   
+        <table id="viewrecords">
+            <tr>
+                <th>Title</th>
+                <th>Date</th>
+                <th>Income/Expense</th>
+                <th>Category</th>
+                <th>Amount</th>
+                <th>Paymentmode</th>
+                <th>Note</th>
+            </tr>
+            <tr>
+                <td id="titleid"></td>
+                <td id="dateid"></td>
+                <td id="ieid"></td>
+                <td id="catid"></td>
+                <td id="amtid"></td>
+                <td id="pmid"></td>
+                <td id="noteid"></td>
+                
+
+            </tr>
+        </table>
+
+        <p><button type="button" name="deleteR" class="button">Delete Record</button></p><br>
+		<p><button type="button" name="deleteall" id="deleteallr">Delete All Records</button></p>
+		<button class="backbutton" ><span ><a href="index.html">Back </a></span></button>
+</form>
+
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
