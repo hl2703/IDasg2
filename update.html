@@ -14,104 +14,105 @@
 </head>
 
 <body class="formstyle format">
+    <img class="icons"src="images/arrows.png" alt="update">
     <h1 class="heading">Update Records</h1>
-<br>
-<form id="updateform">
-    <p><label class="inputname" >
-        Select record:</label>
-        <select name="selectrecord" id="idselect"><option value=""> --- </option></select>
-    </p>
+    <br>
+    <form id="updateform">
+        <p><label class="inputname" >
+            Select record:</label>
+            <select name="selectrecord" id="idselect"><option value=""> --- </option></select>
+        </p>
 
-    <p><label class="inputname" >Record title:</label><input type="text" name="title" id="name" ></p>
-    <div id="feedback"></div>
-    <p><label class="inputname" >Date:</label><input type="date" name="rdate" id="date"></p>
+        <p><label class="inputname" >Record title:</label><input type="text" name="title" id="name" ></p>
+        <div id="feedback"></div>
+        <p><label class="inputname" >Date:</label><input type="date" name="rdate" id="date"></p>
 
 
-    <div id="dfeedback"></div>
-    <p><label class="inputname" >Income/Expense:</label><br>
-        <label class="iediv"> 
-        <input  id="idex" type="radio" name="ie" value="expense"checked > Expense<br>
-        <span class="checkmark"></span>
-        </label>
-        <label class="iediv"> 
-        <input id="ieid" type="radio" name="ie" value="income" > Income<br>
-        <span class="checkmark"></span>
-        </label>
+        <div id="dfeedback"></div>
+        <p><label class="inputname" >Income/Expense:</label><br>
+            <label class="iediv"> 
+            <input  id="idex" type="radio" name="ie" value="expense"checked > Expense<br>
+            <span class="checkmark"></span>
+            </label>
+            <label class="iediv"> 
+            <input id="ieid" type="radio" name="ie" value="income" > Income<br>
+            <span class="checkmark"></span>
+            </label>
+        
+        </p>
+
     
-    </p>
-
-   
-    <div id="iefeedback"></div>
-    <p id="catp"><label class="inputname" >Category (For expense):</label><br>
-        <div class="exdiv">
-        <label class="iediv"> 
-        <input type="radio" name="category" value="food" checked> Food<br>
-        <span class="checkmark"></span>
-    </label>
-        <label class="iediv"> 
-        <input type="radio" name="category" value="transport"> Transport<br>
-        <span class="checkmark"></span>
-    </label>
-        <label class="iediv"> 
-        <input type="radio" name="category" value="groceries"> Groceries<br>
-        <span class="checkmark"></span>
-    </label>
-        <label class="iediv"> 
-        <input type="radio" name="category" value="leisure"> Leisure<br>
-        <span class="checkmark"></span>
-    </label>
-        <label class="iediv"> 
-        <input type="radio" name="category" value="others"> Others<br>
-        <span class="checkmark"></span>
-    </label>
-    </div>
-    <div class="naclass">
-        <label class="iediv"> 
-        <input  type="radio" name="category" value="na" > N/A<br>
-        <span class="checkmark"></span>
-    </label>
-    </div>
-
-    </p>
-    <div id="cfeedback"></div>
-    <p><label class="inputname" >Amount ($):</label><input type="text"name="amount" id="amt"></p>
-    <div id="afeedback"></div>
-
-
-    <p><label class="inputname" >Payment mode(For expense):</label>
-        <br>
-        <div class="exdiv">
+        <div id="iefeedback"></div>
+        <p id="catp"><label class="inputname" >Category (For expense):</label><br>
+            <div class="exdiv">
             <label class="iediv"> 
-            <input type="radio" name="pmode" value="cash" checked> Cash<br>
+            <input type="radio" name="category" value="food" checked> Food<br>
             <span class="checkmark"></span>
         </label>
             <label class="iediv"> 
-            <input type="radio" name="pmode" value="credit"> Credit Card<br>
+            <input type="radio" name="category" value="transport"> Transport<br>
             <span class="checkmark"></span>
         </label>
             <label class="iediv"> 
-            <input type="radio" name="pmode" value="nets"> NETs<br>
+            <input type="radio" name="category" value="groceries"> Groceries<br>
             <span class="checkmark"></span>
         </label>
             <label class="iediv"> 
-            <input type="radio" name="pmode" value="others"> Others<br>
+            <input type="radio" name="category" value="leisure"> Leisure<br>
+            <span class="checkmark"></span>
+        </label>
+            <label class="iediv"> 
+            <input type="radio" name="category" value="others"> Others<br>
             <span class="checkmark"></span>
         </label>
         </div>
         <div class="naclass">
-
             <label class="iediv"> 
-            <input type="radio" name="pmode" value="na" > N/A<br>
+            <input  type="radio" name="category" value="na" > N/A<br>
             <span class="checkmark"></span>
         </label>
-    </div>
-    </p>
-    <div id="pfeedback"></div>
-    <p><label class="inputname" >Note:(optional)</label><input type="text" name="note" id="inote"></p>
-    
-	<p><button type="button" name="save" class="button">Save Changes</button></p>
-	<button class="backbutton" ><span ><a href="index.html">Back </a></span></button>
-</form>
+        </div>
+
+        </p>
+        <div id="cfeedback"></div>
+        <p><label class="inputname" >Amount ($):</label><input type="text"name="amount" id="amt"></p>
+        <div id="afeedback"></div>
+
+
+        <p><label class="inputname" >Payment mode(For expense):</label>
+            <br>
+            <div class="exdiv">
+                <label class="iediv"> 
+                <input type="radio" name="pmode" value="cash" checked> Cash<br>
+                <span class="checkmark"></span>
+            </label>
+                <label class="iediv"> 
+                <input type="radio" name="pmode" value="credit"> Credit Card<br>
+                <span class="checkmark"></span>
+            </label>
+                <label class="iediv"> 
+                <input type="radio" name="pmode" value="nets"> NETs<br>
+                <span class="checkmark"></span>
+            </label>
+                <label class="iediv"> 
+                <input type="radio" name="pmode" value="others"> Others<br>
+                <span class="checkmark"></span>
+            </label>
+            </div>
+            <div class="naclass">
+
+                <label class="iediv"> 
+                <input type="radio" name="pmode" value="na" > N/A<br>
+                <span class="checkmark"></span>
+            </label>
+        </div>
+        </p>
+        <div id="pfeedback"></div>
+        <p><label class="inputname" >Note:(optional)</label><input type="text" name="note" id="inote"></p>
+        
+        <p><button type="button" name="save" class="button">Save Changes</button></p>
+        <button class="backbutton" ><span ><a href="index.html">Back </a></span></button>
+    </form>
 
 
     
