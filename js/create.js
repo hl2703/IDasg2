@@ -87,77 +87,77 @@ function checkUsername() {
      
       };
     
-    var iel = document.getElementById('ieid');     
+  var iel = document.getElementById('ieid');     
     
   
     
-    iel.addEventListener('change', checkI, false);
-    function checkE(){
-     
-          $(".naclass").hide();
-          $(".exdiv").show();
-      
-        };
-      
-      var exEl= document.getElementById('idex');     
-     
-      
-      exEl.addEventListener('change', checkE, false);
+  iel.addEventListener('change', checkI, false);
+  function checkE(){
+    
+        $(".naclass").hide();
+        $(".exdiv").show();
+    
+      };
+    
+  var exEl= document.getElementById('idex');     
+  
+  
+  exEl.addEventListener('change', checkE, false);
 
-     // console.log(submitForm);
-$(document).on('click','#savebutton',function(e){
-        event.preventDefault();
+    // console.log(submitForm);
+  $(document).on('click','#savebutton',function(e){
+          event.preventDefault();
+          
         
-       
-        if (submitForm==2){
-var titleInput=document.getElementById("name").value;
+          if (submitForm==2){
+  var titleInput=document.getElementById("name").value;
 
-var dateInput=document.getElementById("date").value;
-var ieInput = [];
-$.each($("input[name='ie']:checked"), function(){
-ieInput.push($(this).val());
-});
+  var dateInput=document.getElementById("date").value;
+  var ieInput = [];
+  $.each($("input[name='ie']:checked"), function(){
+  ieInput.push($(this).val());
+  });
 
-var catInput = [];
-$.each($("input[name='category']:checked"), function(){
-catInput.push($(this).val());
-});
+  var catInput = [];
+  $.each($("input[name='category']:checked"), function(){
+  catInput.push($(this).val());
+  });
 
-var amtInput=document.getElementById("amt").value;
+  var amtInput=document.getElementById("amt").value;
 
-var pInput = [];
-$.each($("input[name='pmode']:checked"), function(){
-pInput.push($(this).val());
-});
-
-
-
-var noteInput=document.getElementById("inote").value;
-
-//console.log(titleInput+dateInput+ieInput+catInput+amtInput+pInput+noteInput);
-alert("Record Saved!");
+  var pInput = [];
+  $.each($("input[name='pmode']:checked"), function(){
+  pInput.push($(this).val());
+  });
 
 
 
-function record(title, date,ie, category,amount,pmode,note) {
+  var noteInput=document.getElementById("inote").value;
 
-this.title = title;
-this.date=date;
-this.ie=ie;
-this.category=category;
-this.amount=amount;
-this.pmode=pmode;
-this.note=note
-}
+  //console.log(titleInput+dateInput+ieInput+catInput+amtInput+pInput+noteInput);
+  alert("Record Saved!");
 
-        var newRecord = new record(titleInput,dateInput,ieInput,catInput,amtInput,pInput,noteInput);
-        let getList = JSON.parse(localStorage.getItem("recordList")) ||[];
-       
-        getList.push(newRecord);
-        console.log("record created");
-        localStorage.setItem("recordList", JSON.stringify(getList)); //store data in local storage
-       
-       
+
+
+  function record(title, date,ie, category,amount,pmode,note) {
+
+    this.title = title;
+    this.date=date;
+    this.ie=ie;
+    this.category=category;
+    this.amount=amount;
+    this.pmode=pmode;
+    this.note=note
+    }
+
+  var newRecord = new record(titleInput,dateInput,ieInput,catInput,amtInput,pInput,noteInput);
+  let getList = JSON.parse(localStorage.getItem("recordList")) ||[];
+
+  getList.push(newRecord);
+  console.log("record created");
+  localStorage.setItem("recordList", JSON.stringify(getList)); //store data in local storage
+      
+      
 
 
 
@@ -165,15 +165,15 @@ this.note=note
 
 
 
-var formEl=document.getElementById("createform");
+  var formEl=document.getElementById("createform");
 
-formEl.reset();
-location.reload();
-submitForm=-1;
-        }
+  formEl.reset();
+  location.reload();
+  submitForm=-1;
+          }
 
-else if (submitForm<2){
-    alert("Pls enter fields accordingly.");
+  else if (submitForm<2){
+      alert("Pls enter fields accordingly.");
 }
 });
 
