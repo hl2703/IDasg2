@@ -1,26 +1,21 @@
 # IDasg2
+Idea: 
 Build a front-end website that allows budget tracking
 External user’s goal:
 Be able to track spending information and retrieve information
 Site owner's goal:
 Get users to store their daily expenses and track their spending
-                                                
-Potential features to include:
-•	track, view, sort, delete, update and compare your income/expenses over a period of time.
-•	Use localstorage to store spending information
-•	Using charts to display information and provide comparison
-
+                                            
 Overall description of app:
 An app designed to track your income and expenses in a simple way. You can track, view, sort, delete, update and compare your income/expenses over a period of time.
 This app will make use of the local storage api to store and retrieve record details , the ip api to display location and currency of record and the chart.js api to display the details over a period of time in the form of a chart.
 
-Deisgn Process:
+Design Process:
 The main design of this app is a bee-themed design. This is to provide a visual appeal to users regardless of age or gender. There is a main menu at the main page for users to nagivate the features of the app. The overall design of the app is simple so that users can find each feature easily and will not be overwhelmed with too much content in the website. Each feature has an icon to visually represent it for easy navigation.
 
 Existing Features
 1.	Create record
 To get started, enter a new record by clicking the “create new record” button. 
-The ip api is used to display location of record as well as the currency used.
 
 Fill in the following input fields:
 •   Record Title (required so that user can identify each record)
@@ -33,24 +28,24 @@ Fill in the following input fields:
 -	 Leisure
 -	 Others
 
-•	Note(optional as not all records need a note)
+•  Note(optional as not all records need a note)
 
-•	 Date of Record (required so that user can track and compare records by date)
+•  Date of Record (required so that user can track and compare records by date)
 
 •	Payment Mode (required for organising expense records by payment mode)
 -	Cash
--	 Credit Card
--	 NETs
--	 Others
+-	Credit Card
+-	NETs
+-	Others
 
-•	amount (required to track amount spent or received )
+•	amount (required to track amount spent or received)
 -	input greater than 0 required
 
 •	Category of record(required to sort records into income or expense)
 -	Either Income/expense
 When you are done, click the “save” button. The data will be stored in the local storage.
 Click the “back” button to go back to the home page.
-
+The ip api is used to display location of record as well as the currency used.
 2.	View records:
 To view the records created, click the “view records” button.
 The records will be displayed in a table.
@@ -91,6 +86,7 @@ Potential features to include:
 Technologies used:
 - HTML to create the webpages
 - CSS to style the webpages
+- CSS framework used: Bootstrap
 - Javascript to add user interactivity to the webpages
 - -Jquery to simplify DOM manipulation
 
@@ -101,11 +97,17 @@ Testing
   https://jigsaw.w3.org/css-validator/.
 - Javascript validator:
   https://codebeautify.org/jsvalidate
-- form validation
+- form validation testing:
+  1. Click on create record
+  2. type in title, message "title must be at least 3 characters shown"
+  3. left title blank, message "please enter a valid title shown"
+  4. left date blank, message "please input date" shown
+  5. entered amount as 0, message "enter an amount greater than 0" shown
+  6. not all fields of the form entered, alert message "pls enter the fields accordingly" shown
   
 Github link:https://hl2703.github.io/IDasg2/
 
-credits:
+Credits:
 https://repl.it/@malcolmyam/wk0x-ipapi-json from week9 materials
 wk08-simple-bootstrap from wk 8 learning materials
 Usage of localstorage: https://www.w3schools.com/js/js_api_web_storage.asp
