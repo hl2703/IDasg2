@@ -111,4 +111,5 @@ Credits:
 https://repl.it/@malcolmyam/wk0x-ipapi-json from week9 materials
 wk08-simple-bootstrap from wk 8 learning materials
 Usage of localstorage: https://www.w3schools.com/js/js_api_web_storage.asp
+All images taken from: https://www.flaticon.com/
 
