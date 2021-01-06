@@ -108,8 +108,10 @@ Testing
 Github link:https://hl2703.github.io/IDasg2/
 
 Credits:
-https://repl.it/@malcolmyam/wk0x-ipapi-json from week9 materials
-wk08-simple-bootstrap from wk 8 learning materials
-Usage of localstorage: https://www.w3schools.com/js/js_api_web_storage.asp
-All images taken from: https://www.flaticon.com/
+- ip api:https://repl.it/@malcolmyam/wk0x-ipapi-json from week9 materials
+- bootstrap reference: wk08-simple-bootstrap from wk 8 learning materials
+- Usage of localstorage: https://www.w3schools.com/js/js_api_web_storage.asp
+- sorting of records: https://www.w3schools.com/howto/howto_js_sort_table.asp
+- All images taken from: https://www.flaticon.com/
+- chart.js reference: https://www.chartjs.org/docs/latest/
 
