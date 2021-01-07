@@ -74,21 +74,21 @@ The records will be displayed in a table.
 
 7. Usage of APIs:
 - IP API:
-This api was used to display the location of record and the currency used.
+This API was used to display the location of record and the currency used.
 - Chart.JS API:
 This API was used to provide comparison for the income and expense records over the months. It allows visual comparsion of the data so that users can see the trend in the spendings and income such as the highest expenditure etc. The chart displayed will be based on the user inputs 
-- local storage api
-This api was used to store and access the data of the records.
+- local storage API:
+This API was used to store and access the data of the records.
 
 Potential features to include:
-- yearly comparison of records
+- Yearly comparison of records
 
 Technologies used:
 - HTML to create the webpages
 - CSS to style the webpages
 - CSS framework used: Bootstrap
 - Javascript to add user interactivity to the webpages
-- -Jquery to simplify DOM manipulation
+- Jquery to simplify DOM manipulation
 
 Testing
 - W3C markup validator: 
@@ -97,7 +97,7 @@ Testing
   https://jigsaw.w3.org/css-validator/.
 - Javascript validator:
   https://codebeautify.org/jsvalidate
-- form validation testing:
+- Form validation testing:
   1. Click on create record
   2. type in title, message "title must be at least 3 characters shown"
   3. left title blank, message "please enter a valid title shown"
