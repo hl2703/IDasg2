@@ -114,4 +114,10 @@ Credits:
 - sorting of records: https://www.w3schools.com/howto/howto_js_sort_table.asp
 - All images taken from: https://www.flaticon.com/
 - chart.js reference: https://www.chartjs.org/docs/latest/
+- creating and deleting records, writing to local storage referenced from: https://www.codeproject.com/Articles/753724/JavaScript-Front-End-Web-App-Tutorial-Part
+- local storage api referenced from: wk07 learning materials
+- form validation referenced from: wk07 learning materials
 
+Done by:
+Hannah Loh(P01)
+S10186258
