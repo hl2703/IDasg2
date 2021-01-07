@@ -206,7 +206,7 @@ function loadRecords(){
         row.insertCell(-1).textContent = noteArray[i]; 
     }
       
-  //console.log(titleArray+dateArray);
+  
   };
   
   

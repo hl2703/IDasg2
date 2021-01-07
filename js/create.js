@@ -8,15 +8,14 @@ function checkUsername() {
     if (username.length <3) {     //check if length is less than 3                
                
       elMsg.textContent = 'Please enter valid title'; 
-    
-        
-    } else {                                     
+     
+    } 
+    else {                                     
       elMsg.textContent = '';   
       add=1;                 
     }
     submitForm=submitForm+add
-    //console.log(add);
-    //console.log('submitnum:'+submitForm);
+    
   }
   
   function tipUsername() {                          
@@ -31,8 +30,6 @@ function checkUsername() {
  
   el.addEventListener('focus', tipUsername, false); // focus call tipUsername()
   el.addEventListener('blur', checkUsername, false);// blur call checkUsername()
-  
-
 
   function checkDate() {                        
     var datev = del.value;  
@@ -45,7 +42,7 @@ function checkUsername() {
       delMsg.textContent = '';     
       add=1;        
     }
-    //console.log(add);
+    
     submitForm=submitForm+add
   }
   
@@ -68,7 +65,7 @@ function checkUsername() {
       aelMsg.textContent = '';    
       add=1;     
     }
-    //console.log(add);
+    
     submitForm=submitForm+add
   }
   
@@ -103,8 +100,7 @@ function checkUsername() {
   
   
   exEl.addEventListener('change', checkE, false);
-
-    // console.log(submitForm);
+ 
   $(document).on('click','#savebutton',function(e){
           event.preventDefault();
           
@@ -134,7 +130,6 @@ function checkUsername() {
 
   var noteInput=document.getElementById("inote").value;
 
-  //console.log(titleInput+dateInput+ieInput+catInput+amtInput+pInput+noteInput);
   alert("Record Saved!");
 
 
@@ -156,14 +151,6 @@ function checkUsername() {
   getList.push(newRecord);
   console.log("record created");
   localStorage.setItem("recordList", JSON.stringify(getList)); //store data in local storage
-      
-      
-
-
-
-    //console.log(submitForm);
-
-
 
   var formEl=document.getElementById("createform");
 
@@ -177,4 +164,4 @@ function checkUsername() {
 }
 });
 
-      //console.log(submitForm);
+    

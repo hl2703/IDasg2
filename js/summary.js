@@ -10,7 +10,7 @@ function sortRecords(){
         ieArray.push(templist[i].ie);//add income/expense type to array
         amtArray.push(templist[i].amount);//add amt to array
     }
-    //console.log(dateArray);
+    
     var month = [];//add months to array
     month[0] = "January";
     month[1] = "February";
@@ -29,16 +29,14 @@ function sortRecords(){
         var indexel=dateArray[i];
         var firstNum=indexel.charAt(5);
         var secNum=indexel.charAt(6);
-        //console.log(firstNum);
-        //console.log(secNum);
+        
         var combineNum=String(firstNum)+String(secNum);
-        //console.log(combineNum);
+        
         var convertNum=parseInt(combineNum);
-        //console.log(convertNum);
+        
         var convertDate=month[convertNum-1];//retrieve month
-        //console.log(convertDate);
+       
         monthArray.push(convertDate);
-        // console.log(monthArray);
       
     }
    
@@ -51,26 +49,18 @@ function sortRecords(){
       var monthlyExpense=0;
       var monthlySavings=0;
       var td = tr[i].getElementsByTagName("td")[0];
-      
-      //console.log(td); 
+   
       var tdtext=td.textContent;
-      //console.log(tdtext);
+      
       for (var w=0;w<monthArray.length;w++){
         if(tdtext==monthArray[w] && ieArray[w]=="income"){
             monthlyIncome=monthlyIncome+Number(amtArray[w]);
-            //console.log(tdtext);
-            //console.log(ieArray[w]);
-            //console.log(monthlyIncome);
-            
+           
             $('tr').eq(i).find('td').eq(1).text(monthlyIncome);
         }
         
         else if (tdtext==monthArray[w] && ieArray[w]=="expense"  ){
-            
-            //console.log("amtarray:"+ amtArray[w]);
-            //console.log(monthlyExpense);
-            
-            //console.log(monthArray[w]);
+          
             if(tdtext==monthArray[w] && ieArray[w]=="expense"){
                 monthlyExpense=monthlyExpense+ Number(amtArray[w]);
         
@@ -79,10 +69,7 @@ function sortRecords(){
             
             }
         }
-        //console.log(monthlyExpense);
-            //console.log(tdtext);
-            //console.log(ieArray[w]);
-            
+       
         monthlySavings=monthlyIncome-monthlyExpense;
         $('tr').eq(i).find('td').eq(3).text(monthlySavings);
         }
@@ -91,7 +78,6 @@ function sortRecords(){
         for (var i = 1; i < tr.length-1; i++) {
           var tdIncome = tr[i].getElementsByTagName("td")[1].textContent;
           yrIncome=yrIncome+Number(tdIncome);
-          //console.log("yincome"+yrIncome);
         
       }
       $('tr').eq(13).find('td').eq(1).text(yrIncome);
@@ -100,8 +86,7 @@ function sortRecords(){
         for (var i = 1; i < tr.length-1; i++) {
           var tdExpense = tr[i].getElementsByTagName("td")[2].textContent;
           yrExpense=yrExpense+Number(tdExpense);
-          //console.log("yexp"+yrExpense);
-        
+          
       }
       $('tr').eq(13).find('td').eq(2).text(yrExpense);
 
@@ -109,7 +94,7 @@ function sortRecords(){
         for (var i = 1; i < tr.length-1; i++) {
           var tdSavings = tr[i].getElementsByTagName("td")[3].textContent;
           yrSavings=yrSavings+Number(tdSavings);
-         // console.log("ysaving"+yrSavings);
+        
         
       }
       $('tr').eq(13).find('td').eq(3).text(yrSavings);

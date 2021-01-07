@@ -61,9 +61,7 @@ function displayRecords(){
     var indexr=titleArray.indexOf(selectedVal);
     var selectedID = document.getElementById("selectid");
     selectedID.remove(indexr+1);
-    //console.log(indexr);
-    //console.log(templist[indexr]);
-        
+
         
         templist.splice(indexr,1); //clear data
         titleArray.splice(indexr,1); //delete title

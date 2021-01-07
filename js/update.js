@@ -87,8 +87,6 @@ function clickSave(){
     var newNote=recordForm.note.value;
     noteArray[indexr]=newNote;
 
-    console.log(newTitle+newDate+newIe+newCat+newAmt+newPmode+newNote);
-
     var listObj=templist[indexr];
     listObj.title=newTitle;
     console.log(listObj.title);
