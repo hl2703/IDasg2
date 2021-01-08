@@ -71,8 +71,10 @@ The records will be displayed in a table.
 - list main features of the app
 
 6. validation of user input for records
+- validate user input in record form:
+- validation of tile, date,payment mode and amount input
 
-7. Usage of APIs:
+1. Usage of APIs:
 - IP API:
 This API was used to display the location of record and the currency used.
 - Chart.JS API:
