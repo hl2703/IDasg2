@@ -1,9 +1,9 @@
 # IDasg2
-Idea: 
+- Idea: 
 Build a front-end website that allows budget tracking
-External user’s goal:
+- External user’s goal:
 Be able to track spending information and retrieve information
-Site owner's goal:
+- Site owner's goal:
 Get users to store their daily expenses and track their spending
                                             
 Overall description of app:
