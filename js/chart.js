@@ -1,3 +1,4 @@
+//chart.js reference: https://www.chartjs.org/docs/latest/
 var ctx = document.getElementById("myChart");//get chart id
 
 var myChart = new Chart(ctx, {

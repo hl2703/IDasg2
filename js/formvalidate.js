@@ -1,5 +1,5 @@
 $(".naclass").hide();
-
+//form validation referenced from: wk07 learning materials
 function checkUsername() {                       
     var username = el.value;                        
     if (username.length <3) {                     

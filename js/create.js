@@ -2,6 +2,7 @@
 $(".naclass").hide();
 var submitForm=-1;
 //validate title
+//form validation referenced from: wk07 learning materials
 function checkUsername() {                        
     var username = el.value;
     var add=0;                     
@@ -133,7 +134,8 @@ function checkUsername() {
   alert("Record Saved!");
 
 
-
+//referenced from: https://www.w3schools.com/js/js_api_web_storage.asp
+//local storage api referenced from: wk07 learning materials
   function record(title, date,ie, category,amount,pmode,note) {
 
     this.title = title;

@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    
+ //referenced from https://repl.it/@malcolmyam/wk0x-ipapi-json from week9 materials   
 
     $.ajax({
       method: "GET",

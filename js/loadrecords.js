@@ -130,7 +130,7 @@ function loadRecords(){
     var dButton = document.getElementById("hlbutton");
     dButton.addEventListener("click",sortdTable,false);
   
-  
+  //refernced from https://www.w3schools.com/howto/howto_js_sort_table.asp
     function sortTable() {
     
     var table = document.getElementById("viewrecords");
@@ -191,7 +191,7 @@ function loadRecords(){
     }
     }
     }       
-    
+    //referenced from: https://www.codeproject.com/Articles/753724/JavaScript-Front-End-Web-App-Tutorial-Part
     for(i=0;i<keys.length;i++){
         var tableEl=document.getElementById("viewrecords");
         var row={};
